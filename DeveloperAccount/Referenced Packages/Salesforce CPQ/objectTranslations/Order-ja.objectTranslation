@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Indicates if the order is contracted. --></help>
+        <label>契約済み</label>
+        <name>Contracted__c</name>
+    </fields>
+    <fields>
+        <help><!-- &quot;By Subscription End Date&quot; creates a separate Contract for each unique Subscription End Date, containing only those Subscriptions. &quot;Single Contract&quot; creates one Contract containing all Subscriptions, regardless of their End Dates. --></help>
+        <label>契約方法</label>
+        <name>ContractingMethod__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total amount of all order product bookings. --></help>
+        <label>注文予約</label>
+        <name>OrderBookings__c</name>
+    </fields>
+    <fields>
+        <help><!-- The payment term for this order. --></help>
+        <label>お支払い条件</label>
+        <name>PaymentTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- The price calculation status message --></help>
+        <label>価格計算状況メッセージ</label>
+        <name>PriceCalcStatusMessage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the order price calculation job status.  It is set by the system. --></help>
+        <label>価格計算状況</label>
+        <name>PriceCalcStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- The quote where the order is created from. --></help>
+        <label>見積</label>
+        <name>Quote__c</name>
+        <relationshipLabel>注文</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Specify the term of the renewal. By default, it matches the original contract term. --></help>
+        <label>更新期間</label>
+        <name>RenewalTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rate of renewal price increases. --></help>
+        <label>更新の上昇率 (%)</label>
+        <name>RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The estimated tax amount --></help>
+        <label>予想税額</label>
+        <name>TaxAmount__c</name>
+    </fields>
+    <layouts>
+        <layout>CPQ Order Layout</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- OrderContracting --></label>
+            <section>OrderContracting</section>
+        </sections>
+        <sections>
+            <label><!-- Quote and Opportunity --></label>
+            <section>Quote and Opportunity</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping and Billing Information --></label>
+            <section>Shipping and Billing Information</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage>注文を契約できません。注文を有効化してからもう一度やり直してください。</errorMessage>
+        <name>Cannot_Contract_New_Order</name>
+    </validationRules>
+    <webLinks>
+        <label>注文商品を編集</label>
+        <name>EditOrderProducts</name>
+    </webLinks>
+</CustomObjectTranslation>

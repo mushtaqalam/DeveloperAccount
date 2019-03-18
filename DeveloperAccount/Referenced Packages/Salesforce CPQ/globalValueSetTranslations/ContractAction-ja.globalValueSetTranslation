@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Cancel</masterLabel>
+        <translation><!-- Cancel --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>New</masterLabel>
+        <translation><!-- New --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Product Swap</masterLabel>
+        <translation><!-- Product Swap --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Quantity Decrease</masterLabel>
+        <translation><!-- Quantity Decrease --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Quantity Increase</masterLabel>
+        <translation><!-- Quantity Increase --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Renew</masterLabel>
+        <translation><!-- Renew --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

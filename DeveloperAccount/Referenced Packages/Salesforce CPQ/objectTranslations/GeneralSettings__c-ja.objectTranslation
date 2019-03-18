@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- General Settings --></value>
+    </caseValues>
+    <fields>
+        <help><!-- Choose to place the Delete and Edit actions to the Left or the Right of the line items in the Line Editor. --></help>
+        <label>[アクション] 列の配置</label>
+        <name>ActionsColumnPlacement__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to disable Add Subscriptions button on renewal quotes. --></help>
+        <label>サブスクリプションの追加を無効化</label>
+        <name>AddSubscriptionsDisabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma delimited list of additional field types allowed in the CPQ_Lookup_Search field set which enables additional field search in CPQ lookup field popups. Acceptable values are: textarea, date, datetime, number, double, int, currency, percent, reference. --></help>
+        <label>追加のルックアップ検索タイプ</label>
+        <name>AdditionalLookupSearchTypes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to allow non-consecutive custom segments for custom price dimensions. If this checkbox is unchecked the start date of each segment must be the day after the previous segment&apos;s end date. --></help>
+        <label>連続しないカスタムセグメントを許可</label>
+        <name>AllowNonConsecutiveCustomSegments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow translations in Quote Line Editor, Product Selection, Configurator and output documents. --></help>
+        <label>複数言語翻訳を有効化</label>
+        <name>AllowOutputInDifferentLanguages__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to require primary quote to be approved before order can be created. --></help>
+        <label>承認済み見積が必要</label>
+        <name>ApprovedQuoteRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to enable asset upgrades by adding Upgrade Assets button to Edit Lines page. --></help>
+        <label>納入商品のアップグレードを有効化</label>
+        <name>AssetUpgradesEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enabling asyncn calculate flow. --></help>
+        <label>非同期計算を有効化</label>
+        <name>AsyncCalculate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose target object if you want to save generated quote documents as attachments in addition to saving in Documents tab. --></help>
+        <label>添付対象オブジェクト</label>
+        <name>AttachmentTargetObject__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify an Apex class implementing BillingPlugin interface. --></help>
+        <label>請求プラグイン</label>
+        <name>BillingPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines pricing calculation for Block Price Asset Tiers on Contract Renewals. --></help>
+        <label>ブロック価格の納入商品の動作</label>
+        <name>BlockPriceAssetBehavior__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the base URL of the Rest Proxy app. Do not change unless instructed by Salesforce CPQ Support. --></help>
+        <label>REST プロキシ URL</label>
+        <name>BrickRestProxyUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the base URL of the BrickRest app. Do not change unless instructed by Salesforce CPQ Support. --></help>
+        <label>BrickRest URL</label>
+        <name>BrickRestUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to include components when using drag and drop to move a bundle. --></help>
+        <label>バンドルをまとめる</label>
+        <name>BundleKeptTogether__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable real-time calculation on the Edit Lines page. Calculations occur when any field value is changed. --></help>
+        <label>すぐに計算</label>
+        <name>CalculateImmediately__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to create contracts in the foreground rather than a background process.  Running in the foreground increases the risk of a CPU timeout during processing. --></help>
+        <label>フォアグラウンドでの契約作成</label>
+        <name>ContractInForeground__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the Endpoint of Contracting Web Service. Do not change unless instructed by Salesforce Support. --></help>
+        <label>契約サービスのエンドポイント</label>
+        <name>ContractServiceEndpoint__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a currency symbol to be used on generated PDF documents and Edit Lines screen. Only applies to organizations with no multi-currency. --></help>
+        <label>通貨記号</label>
+        <name>CurrencySymbol__c</name>
+    </fields>
+    <fields>
+        <label>カスタム設定検証</label>
+        <name>CustomConfigurationValidator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enabling Debug Mode will allow visibility of performance metrics, used for internal development or subscriber access purposes only. --></help>
+        <label>デバッグモードを有効化</label>
+        <name>DebugMode__c</name>
+    </fields>
+    <fields>
+        <help><!-- The default order start date.  If none is specified, the registered Order Management Plugin implementation will be used to retrieve the order start date. --></help>
+        <label>デフォルトの注文開始日</label>
+        <name>DefaultOrderStartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify how long quotes should remain valid by default. --></help>
+        <label>デフォルト見積有効期間 (日)</label>
+        <name>DefaultQuoteValidity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Disable API Access Checks. --></help>
+        <label>API アクセスチェックを無効化</label>
+        <name>DisableAPIAccessChecks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to disable the auto refresh of standard object pages upon the completion of its background quote calculation triggered during a save. Auto refresh is always disabled in the Lightning UI or SalesForce1. --></help>
+        <label>バックグラウンド計算更新を無効化</label>
+        <name>DisableBackgroundQuoteCalcRefresh__c</name>
+    </fields>
+    <fields>
+        <help><!-- Disable PSL License Enforcement --></help>
+        <label>PSL ライセンス適用を無効化</label>
+        <name>DisablePSLLicenseEnforcement__c</name>
+    </fields>
+    <fields>
+        <help><!-- When TRUE the quote line editor page will use components created in CPQ-27. This will reduce performance and revert cell focus and edit behavior. --></help>
+        <label>UI3 を無効化</label>
+        <name>DisableUI3__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to allow documents to be posted to feed rather than saved as regular attachments. Requires Feed Tracking to be enabled on the object. --></help>
+        <label>ドキュメントをフィードに投稿</label>
+        <name>DocumentAttachmentPosted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the folder where generated documents will be placed. --></help>
+        <label>ドキュメントフォルダ ID</label>
+        <name>DocumentFolderId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to hide document name when generating quote documents. --></help>
+        <label>ドキュメント名を非表示</label>
+        <name>DocumentNameHidden__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the Endpoint of document Web Service. Do not change unless instructed by Salesforce Support. --></help>
+        <label>ドキュメントサービスのエンドポイント</label>
+        <name>DocumentServiceEndpoint__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify an Apex class implementing DocumentStore interface. --></help>
+        <label>ドキュメントストアプラグイン</label>
+        <name>DocumentStorePlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify an Apex class implementing ElectronicSignaturePlugin interface. --></help>
+        <label>電子署名プラグイン</label>
+        <name>ElectronicSignaturePlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables the creation of option level configuration attributes. --></help>
+        <label>商品オプションドロアーを有効化</label>
+        <name>EnableProductOptionDrawer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables the creation of Usage Rate Cards. --></help>
+        <label>使用量ベースの価格設定を有効化 (パイロット)</label>
+        <name>EnableUsageBasedPricing__c</name>
+    </fields>
+    <fields>
+        <help><!-- URL of external configurator, opened when configuring a Product marked as Externally Configurable --></help>
+        <label>外部コンフィグレータ URL</label>
+        <name>ExternalConfiguratorURL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to display quote document preview in full page. --></help>
+        <label>全画面プレビュー</label>
+        <name>FullPagePreview__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines whether the custom permission HideGlobalHeader should be enforced for non-administrative pages. --></help>
+        <label>グローバルヘッダー権限を使用</label>
+        <name>GlobalHeaderPermUsed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose a field from the SolutionGroups object to use for group description. --></help>
+        <label>グループの説明項目</label>
+        <name>GroupDescriptionField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose a field from the SolutionGroups object to use for group name. --></help>
+        <label>グループ名項目</label>
+        <name>GroupNameField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to require group name be entered on Edit Lines page. --></help>
+        <label>グループ名が必要</label>
+        <name>GroupNameRequired__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose the object to use as the SolutionGroups list. --></help>
+        <label>グループオブジェクト名</label>
+        <name>GroupObjectName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Field to sum and display as the Quote Line Editor&apos;s Group Subtotal --></help>
+        <label>グループ小計項目</label>
+        <name>GroupSubtotalsField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Exclude hidden lines when calculating group totals in a quote document. --></help>
+        <label>グループ合計で非表示品目を除外</label>
+        <name>HiddenLinesExcludedInTotals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Selecting this field will ignore extra days from leap years in the Prorate Multiplier Calculation if Subscription Prorate Precision is Day. --></help>
+        <label>うるう年の日数を無視する</label>
+        <name>IgnoreLeapYearDays__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to use inactive product prices. --></help>
+        <label>無効な価格を使用</label>
+        <name>InactivePricesUsed__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, net-new Products added to a Renewal or Amendment will be included when calculating the price of any Percent of Total Subscriptions being renewed or amended. --></help>
+        <label>メンテナンスに純新規商品を含める</label>
+        <name>IncludeNewProductsInMaintenance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to prevent default behavior of adding standalone Opportunity Product line items on an Opportunity as Quote line items to the initial Quote created from that Opportunity. --></help>
+        <label>初期見積同期を無効化</label>
+        <name>InitialQuoteSyncDisabled__c</name>
+    </fields>
+    <fields>
+        <label>従来のライセンスの顧客</label>
+        <name>IsLegacyCustomer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the maximum number of product rules that can be run on the browser --></help>
+        <label>商品ルールの制限</label>
+        <name>JSProductRulesLimit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to enable Enhanced Product Rules. This uses the limit specified in the Product Rules Limit field for the maximum number of product rules that can be run on the browser --></help>
+        <label>高度な商品ルール</label>
+        <name>JSProductRules__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Custom Script object that contains the Javascript Quote Calculator Plugin --></help>
+        <label>見積計算プラグイン</label>
+        <name>JSQuoteCalculatorPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to enhance user experience for quotes containing a large number of quote lines. Enhancements include single group view, individual pricing table view (tabs for standard and segmented tables), fixed Quote footer, and locked column headers. --></help>
+        <label>品目数の多い見積用の環境を有効にする</label>
+        <name>LargeQuoteExperienceEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quotes with line counts above this number will only send essential lines during UI calls. Quote-scoped Product Rules may not run correctly. --></help>
+        <label>品目数の多い見積のしきい値</label>
+        <name>LargeQuoteThreshold__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the OAuth refresh token used to mass generate and send quote documents. --></help>
+        <label>一括ドキュメント更新トークン</label>
+        <name>MassDocumentRefreshToken__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the username of the user who executes mass generation and send of quote documents. --></help>
+        <label>一括ドキュメントユーザ名</label>
+        <name>MassDocumentUserName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the maximum number of fields allowed in the CPQ_Lookup_Search field set which enables additional field search in CPQ lookup field popups. --></help>
+        <label>ルックアップ検索の最大項目数</label>
+        <name>MaxLookupSearchFields__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to enable deletion of multiple lines in Line Editor. --></help>
+        <label>複数品目削除を有効化</label>
+        <name>MultiLineDeleteEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the view in the Configurator when modifying multiple bundles. Wizard displays each configured product separately, and allows the multiple layouts (Tabs, Categories, etc.). Classic displays all configured products on one page with a Section layout. --></help>
+        <label>複数バンドルビュー</label>
+        <name>MultipleBundlesView__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to enhance the Large Quote Experience with a single view of all groups. --></help>
+        <label>複数グループのビューを有効化</label>
+        <name>MultipleGroupViewEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to allow multiple orders to be generated from the same quote. --></help>
+        <label>複数注文を許可</label>
+        <name>MultipleOrdersAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Toggles the search filter panel being open or closed on load. --></help>
+        <label>デフォルトで検索条件を開く</label>
+        <name>OpenSearchFilterByDefault__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to allow product options used on prior quotes to be deleted. --></help>
+        <label>オプションの削除を許可</label>
+        <name>OptionDeletionAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name of the Apex class which implements SBQQ__OrderManagementPlugin interface. --></help>
+        <label>注文管理プラグイン</label>
+        <name>OrderPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify implementation of PageSecurityPlugin interface to override field security in custom pages. --></help>
+        <label>従来のページセキュリティプラグイン</label>
+        <name>PageSecurityPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to maintain bundle hierarchy on renewal quotes and amendments. --></help>
+        <label>バンドル構造を保持</label>
+        <name>PreserveBundleUponRenewals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option to create Price Schedules for all Products. --></help>
+        <label>すべての商品の価格一覧を作成</label>
+        <name>PriceScheduleForAllProducts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to keep opportunity products created by primary quote after it&apos;s no longer primary. --></help>
+        <label>主見積の商談商品を保持</label>
+        <name>PrimaryQuoteKeepsOpportunityProducts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the name of a custom Visualforce page that will be invoked on every configurable product to initialize the options. --></help>
+        <label>商品設定の初期化</label>
+        <name>ProductConfigurationInitializer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose a field from the Product object to use for product description. --></help>
+        <label>商品の説明項目</label>
+        <name>ProductDescriptionField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to indent the components of product bundles, including nested bundles. --></help>
+        <label>商品階層を視覚化</label>
+        <name>ProductHierarchyVisualized__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose a field from the Product Object that will be used to group product search results. --></help>
+        <label>商品結果グループ項目名</label>
+        <name>ProductResultsGroupFieldName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify an Apex class that supplies customization of search functionality in Product Lookup. This class must implement SBQQ.ProductSearchPlugin interface. --></help>
+        <label>商品検索プラグイン</label>
+        <name>ProductSearchPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Public API salt. --></help>
+        <label>公開 API ソルト</label>
+        <name>PublicAPISalt__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the decimal places to use for standard quantity fields when viewing quotes. --></help>
+        <label>数量スケール</label>
+        <name>QuantityScale__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to more quickly calculate quotes, where price rules are not used, Rollup Summary fields are not displayed in the line editor, and line-level formula fields that depend on parent relationships are not displayed. --></help>
+        <label>簡易計算を有効化</label>
+        <name>QuickCalculateEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to disable defaulting of address when quote is created. --></help>
+        <label>見積の住所のデフォルト設定を無効化</label>
+        <name>QuoteAddressDefaultingDisabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quote load and save are divided into batches by this number of Quote Lines. Performance may vary based on this input. Default is 150. --></help>
+        <label>見積バッチサイズ</label>
+        <name>QuoteBatchSize__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify a custom Apex class for further customizing quote calculations. This class must implement QuoteCalculatorPlugin interface. --></help>
+        <label>従来の見積計算機能プラグイン</label>
+        <name>QuoteCalculatorPlugin__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to disable defaulting of quote contact from primary contact role on the opportunity. --></help>
+        <label>見積の取引先責任者のデフォルト設定を無効化</label>
+        <name>QuoteContactDefaultingDisabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Re-evaluate Bundle Logic on Renewals. --></help>
+        <label>更新時にバンドルロジックを再評価</label>
+        <name>ReevaluateBundleLogicOnRenewals__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose Asset Based to make renewals based off of an Account&apos;s Assets, or choose Contract Based to make renewals based off of Contracts created from a Quote. --></help>
+        <label>更新モデル</label>
+        <name>RenewalModel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to treat all non-subscription lines on renewal quotes as renewed products. This option essentially disables add-ons on renewal quotes since all non-subscription lines will have its price zeroed out. --></help>
+        <label>納入商品のない更新見積を許可</label>
+        <name>RenewalQuotesWithoutAssetsAllowed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to hide line items for renewed assets in Edit Lines page. --></help>
+        <label>更新された納入商品を編集時に非表示</label>
+        <name>RenewedAssetsHiddenWhenEditing__c</name>
+    </fields>
+    <fields>
+        <help><!-- When using the legacy calculator, run calculations in a separate thread. --></help>
+        <label>バックグラウンドで計算機能を実行</label>
+        <name>RunCalculatorInBackground__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select in which global region to operate advanced calculator and document generation web services. --></help>
+        <label>サービス領域</label>
+        <name>ServiceRegion__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to enable SolutionGroups. --></help>
+        <label>ソリューショングループを有効化</label>
+        <name>SolutionGroupsEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enables sorting of products in product search in memory, speeding up the page for customers with large pricebooks. --></help>
+        <label>メモリ内の商品を並び替え</label>
+        <name>SortProductsInMemory__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the OAuth org url for the Salesforce CPQ connected app. Used by Salesforce CPQ shared services to allow access into this SFDC Org. --></help>
+        <label>Salesforce CPQ アプリケーション組織 URL</label>
+        <name>SteelBrickConnAppOrgUrl__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the OAuth refresh token for the Salesforce CPQ connected app. Used by Salesforce CPQ shared services to allow access into this SFDC Org. --></help>
+        <label>Salesforce CPQ アプリケーション更新トークン</label>
+        <name>SteelBrickConnAppRefreshToken__c</name>
+    </fields>
+    <fields>
+        <help><!-- ConnectedApp Consumer Key --></help>
+        <label>ConnectedApp コンシューマ鍵</label>
+        <name>SteelBrickConnectedAppConsumerKey__c</name>
+    </fields>
+    <fields>
+        <help><!-- Access token cache TTL (in minutes) for integration account for the Salesforce CPQ connected app. --></help>
+        <label>アクセストークンキャッシュの TTL</label>
+        <name>SteelBrickIntegrationUserAccessTokenTTL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Access token cache for integration account for the Salesforce CPQ connected app. Used by Salesforce CPQ shared services to cache access token for integration account. --></help>
+        <label>Salesforce CPQ アプリケーションのアクセストークンのキャッシュ</label>
+        <name>SteelBrickIntegrationUserAccessToken__c</name>
+    </fields>
+    <fields>
+        <help><!-- Integration user account for Salesforce CPQ --></help>
+        <label>IntegrationUser アカウントのユーザ名</label>
+        <name>SteelBrickIntegrationUserAccount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enable Integration User for Salesforce CPQ --></help>
+        <label>インテグレーションユーザを有効化</label>
+        <name>SteelBrickIntegrationUserEnabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose whether subscription pricing will be prorated by the day or the month. --></help>
+        <label>サブスクリプションの按分精度</label>
+        <name>SubscriptionProratePrecision__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose whether length of the susbscription should be entered in days or months. --></help>
+        <label>サブスクリプション期間単位</label>
+        <name>SubscriptionTermUnit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Field to sum and display as the Line Editor&apos;s Quote Line Subtotal. Best practice is to select a Unit field such as Net Unit Price, Customer Unit Price, Regular Unit Price, etc. --></help>
+        <label>品目小計項目</label>
+        <name>SubtotalsField__c</name>
+    </fields>
+    <fields>
+        <label>ドキュメント ID</label>
+        <name>ThemeDocumentId__c</name>
+    </fields>
+    <fields>
+        <help><!-- The general Theme applied to all users. User assigned themes will overwrite the values established here. --></help>
+        <label>テーマ</label>
+        <name>Theme__c</name>
+    </fields>
+    <fields>
+        <help><!-- Flag that completely replaces CPQ Configurator with the 3rd party configurator specified by the External Configurator URL field. --></help>
+        <label>サードパーティコンフィグレータ</label>
+        <name>ThirdPartyConfigurator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the Field to sum and display as the Line Editor Total --></help>
+        <label>合計項目</label>
+        <name>TotalsField__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to temporarily disable all triggers for a data migration or other processes that you do not want to execute all Salesforce CPQ triggers. Remember to re-enable triggers after this process so that the application can perform as expected. --></help>
+        <label>トリガを無効化</label>
+        <name>TriggersDisabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the Scale for unit prices. Fractional prices will be rounded off to this many decimal places. --></help>
+        <label>単価スケール</label>
+        <name>UnitPriceScale__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to use the Legacy Quote Calculator. --></help>
+        <label>従来の計算機能を使用</label>
+        <name>UseLegacyCalculator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Continue using legacy contract services. Does not include improved performance for renewing, amending and generating opportunity-based contracts --></help>
+        <label>従来の契約サービスを使用</label>
+        <name>UseLegacyContractService__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option to use the legacy order service. --></help>
+        <label>従来の注文サービスを使用</label>
+        <name>UseLegacyOrderService__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select checkbox to allow Quote Line Editor buttons to wrap rather than collapse within smaller windows. --></help>
+        <label>ボタンを折り返し</label>
+        <name>WrapButtons__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>By Subscription End Date</masterLabel>
+        <translation><!-- By Subscription End Date --></translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Single Contract</masterLabel>
+        <translation><!-- Single Contract --></translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

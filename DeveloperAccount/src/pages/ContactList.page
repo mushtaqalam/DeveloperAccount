@@ -1,0 +1,55 @@
+<apex:page standardController="Contact" recordSetVar="cons" >
+    <apex:form >
+        <apex:pageBlock title="Contact List" id="contacts_list" >
+            <!--Pagination-->
+            <table style = "Width: 100%">
+                <tr>
+                    <td>
+                        <!--Page X ofY -->
+                        Page: <apex:outputText value="{! pageNumber} of {!CEILING(ResultSize/ PageSize)}" />
+                        
+                    </td>
+                    <td align="center">
+                        <!-- Previous Page -->
+                        <!-- active -->
+                        <apex:commandLink action="{! previous }" value=" << Previous" rendered="{! hasPrevious}" />
+                        <!-- inactive (No earlier page)-->
+                        <apex:outputText style="color: #ccc;" value="<< Previous" rendered="{!NOT(hasPrevious)}"  />
+                        &nbsp;&nbsp;
+                        <!-- Next Page -->
+                        <apex:commandLink action="{! Next }" value="Next >>" rendered="{!hasNext}" />
+                        <!-- inactive(No more pages)-->
+                        <apex:outputText style="color: #ccc;" value="Next >>" rendered="{!Not(hasNext)}" />
+                        
+                    </td>
+                    <td align="right">
+                        <!-- Records Per Page -->
+                        Records Per Page:
+                        <apex:selectList value="{!PageSize }" size="1">
+                            <apex:selectOption itemValue="5" itemLabel="5" />
+                            <apex:selectOption itemValue="10" itemLabel="10" />
+                            <apex:actionSupport event="onchange" reRender="contacts_list" />
+                        </apex:selectList>
+                    </td>
+                </tr>
+            </table>
+            Filter:
+                <apex:selectList value="{!filterId}" size="1">
+                    <apex:selectOptions value="{! listViewOptions}" />
+                    <apex:actionSupport event="onchange" reRender="contacts_list" />
+
+                </apex:selectList>
+            <!-- Contacts List-->  
+            
+            
+            <apex:pageBlockTable value="{! cons}"  var="con" >
+                
+                <apex:column value="{!con.Firstname}" />
+                <apex:column value="{!con.lastName}" />
+                <apex:column value="{!con.Email}" />
+                <apex:column value="{!con.Account.Name}" />
+            </apex:pageBlockTable>
+            
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

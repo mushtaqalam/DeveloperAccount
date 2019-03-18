@@ -1,0 +1,4 @@
+<aura:component >
+    <link href='/resource/bootstrap/' rel="stylesheet"/>
+    <c:AllContactsComp />	
+</aura:component>

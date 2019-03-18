@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- ID of the opportunity product that came from this product&apos;s bundle. --></help>
+        <label>親 ID</label>
+        <name>ParentID__c</name>
+    </fields>
+    <fields>
+        <label>見積品目</label>
+        <name>QuoteLine__c</name>
+        <relationshipLabel>商談商品</relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

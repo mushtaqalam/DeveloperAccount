@@ -1,0 +1,31 @@
+<apex:page language="de" controller="exampleCustomLabel">
+    <!-- 
+    /**
+    * Webkul Software.
+    *
+    * @category  Webkul
+    * @author    Webkul
+    * @copyright Copyright (c) 2010-2016 Webkul Software Private Limited (https://webkul.com)
+    * @license   https://store.webkul.com/license.html
+    */
+    -->
+     
+    <!-- If your org has a name space $Label.namespace.labelName -->
+     
+    <apex:form >
+        
+         <apex:pageBlock title="JF Calculation" >
+        <apex:pageBlockSection columns="1" >
+        
+           
+        
+        <apex:inputText id="name" value="{!name }" label="{!$Label.Japanese}" />
+        <apex:inputText id="field1val" value="{!field1val }" label="{!$Label.field1 }" />
+        <apex:inputText id="field12val" value="{!field12val }" label="{!$Label.field12}" />
+        <apex:inputText id="field13val" value="{!field13val }" label="{!$Label.field13}" />
+        
+           
+        </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

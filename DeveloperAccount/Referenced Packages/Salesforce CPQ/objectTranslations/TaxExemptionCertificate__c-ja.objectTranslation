@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>免税証明書</value>
+    </caseValues>
+    <fields>
+        <label>取引先</label>
+        <name>Account__c</name>
+        <relationshipLabel>免税証明書</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- An Active Certificate will make set the ‘Tax Exempt?’ field on the Active to true --></help>
+        <label>有効</label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label>証明書番号</label>
+        <name>CertificateNumber__c</name>
+    </fields>
+    <fields>
+        <help><!-- ptional - to track the company address associated to the certificate --></help>
+        <label>国</label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label>郡</label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label>発行日</label>
+        <name>DateIssued__c</name>
+    </fields>
+    <fields>
+        <help><!-- A certificate can be marked as default only if it is active --></help>
+        <label>デフォルト</label>
+        <name>Default__c</name>
+    </fields>
+    <fields>
+        <help><!-- The company name or DBA name associated to the certificate --></help>
+        <label>免税の会社名</label>
+        <name>ExemptCompanyName__c</name>
+    </fields>
+    <fields>
+        <label>有効期限</label>
+        <name>ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- The authority, such as a government agency or country (for European organizations), that issued the certificate --></help>
+        <label>発行機関</label>
+        <name>IssuingAuthority__c</name>
+    </fields>
+    <fields>
+        <label>メモ</label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label>郵便番号</label>
+        <name>PostalCode__c</name>
+    </fields>
+    <fields>
+        <label>都道府県</label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label>住所_2</label>
+        <name>StreetAddress_2__c</name>
+    </fields>
+    <fields>
+        <label>住所</label>
+        <name>StreetAddress__c</name>
+    </fields>
+    <layouts>
+        <layout>Tax Exemption Certificate Layout</layout>
+        <sections>
+            <label><!-- Company Information --></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Tax Certificate --></label>
+            <section>Tax Certificate</section>
+        </sections>
+        <sections>
+            <label><!-- Tax Certificate Details --></label>
+            <section>Tax Certificate Details</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>免税証明書名</nameFieldLabel>
+</CustomObjectTranslation>

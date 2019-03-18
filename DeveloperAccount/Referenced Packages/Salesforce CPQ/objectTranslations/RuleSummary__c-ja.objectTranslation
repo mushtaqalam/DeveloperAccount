@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Rule Summary --></value>
+    </caseValues>
+    <fields>
+        <label>設定価格ルール数</label>
+        <name>ConfigurationPriceRuleCount__c</name>
+    </fields>
+    <fields>
+        <label>見積アラート商品ルール数</label>
+        <name>QuoteAlertProductRuleCount__c</name>
+    </fields>
+    <fields>
+        <label>見積価格ルール数</label>
+        <name>QuotePriceRuleCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the count of Quote Selection Product Rules. --></help>
+        <label>見積選択商品ルール数</label>
+        <name>QuoteSelectionProductRuleCount__c</name>
+    </fields>
+    <fields>
+        <label>見積検証商品ルール数</label>
+        <name>QuoteValidationProductRuleCount__c</name>
+    </fields>
+</CustomObjectTranslation>

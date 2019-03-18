@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>追加ドキュメント</value>
+    </caseValues>
+    <fields>
+        <help><!-- Set the order in which this item will appear to a sales user in the Related Content menu. If blank, the content will be sorted last. --></help>
+        <label>表示順序</label>
+        <name>DisplayOrder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter a file name for the related content. --></help>
+        <label>ドキュメント名</label>
+        <name>DocumentName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Record ID that contains the content, such as document or Salesforce content. --></help>
+        <label>外部 ID</label>
+        <name>ExternalId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Opportunity related to this content. --></help>
+        <label>商談</label>
+        <name>Opportunity__c</name>
+        <relationshipLabel>追加ドキュメント</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Product related to this content. --></help>
+        <label>商品</label>
+        <name>Product__c</name>
+        <relationshipLabel>追加ドキュメント</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Template related to this content. --></help>
+        <label>見積テンプレート</label>
+        <name>QuoteTemplate__c</name>
+        <relationshipLabel>追加ドキュメント</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Quote related to this content. --></help>
+        <label>見積</label>
+        <name>Quote__c</name>
+        <relationshipLabel><!-- Additional Documents --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox if this content is required for the product. Users must include it when generating a quote document. --></help>
+        <label>必須</label>
+        <name>Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- Template Section related to this content. --></help>
+        <label>テンプレートセクション</label>
+        <name>TemplateSection__c</name>
+        <relationshipLabel>追加ドキュメント</relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Related Content Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>追加ドキュメント</nameFieldLabel>
+    <webLinks>
+        <label>新規見積の追加ドキュメント</label>
+        <name>NewQuoteRelatedContent</name>
+    </webLinks>
+</CustomObjectTranslation>

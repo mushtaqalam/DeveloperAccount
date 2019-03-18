@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>価格条件</value>
+    </caseValues>
+    <fields>
+        <help><!-- Choose the field that should contain the value you enter in the Value field. --></help>
+        <label>項目</label>
+        <name>Field__c</name>
+        <picklistValues>
+            <masterLabel>Product Code</masterLabel>
+            <translation><!-- Product Code --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter a formula with operators, functions, and available fields on quote and target object. Not supported on legacy calculator. --></help>
+        <label>条件の数式</label>
+        <name>FilterFormula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Choose Variable to evaluate this condition against a Summary Variable; otherwise, choose Value. --></help>
+        <label>条件種別</label>
+        <name>FilterType__c</name>
+        <picklistValues>
+            <masterLabel>Formula</masterLabel>
+            <translation><!-- Formula --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value</masterLabel>
+            <translation><!-- Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Variable</masterLabel>
+            <translation><!-- Variable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the Summary Variable you want this condition to use as a filter. --></help>
+        <label>条件変数</label>
+        <name>FilterVariable__c</name>
+        <relationshipLabel>絞り込まれる価格条件</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Assign an unique number to this Condition to reference it in the Price Rule&apos;s Advanced Condition. --></help>
+        <label>インデックス</label>
+        <name>Index__c</name>
+    </fields>
+    <fields>
+        <help><!-- Object against which the condition is evaluated. --></help>
+        <label>オブジェクト</label>
+        <name>Object__c</name>
+        <picklistValues>
+            <masterLabel>Product Option</masterLabel>
+            <translation><!-- Product Option --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote Line</masterLabel>
+            <translation><!-- Quote Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summary Variable</masterLabel>
+            <translation><!-- Summary Variable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the operator to apply when comparing the Field with the Value. --></help>
+        <label>演算子</label>
+        <name>Operator__c</name>
+        <picklistValues>
+            <masterLabel>contains</masterLabel>
+            <translation><!-- contains --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ends with</masterLabel>
+            <translation><!-- ends with --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>equals</masterLabel>
+            <translation><!-- equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater or equals</masterLabel>
+            <translation><!-- greater or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>greater than</masterLabel>
+            <translation><!-- greater than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less or equals</masterLabel>
+            <translation><!-- less or equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>less than</masterLabel>
+            <translation><!-- less than --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not equals</masterLabel>
+            <translation><!-- not equals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>starts with</masterLabel>
+            <translation><!-- starts with --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ParentRuleIsActive</label>
+        <name>ParentRuleIsActive__c</name>
+    </fields>
+    <fields>
+        <label>RuleTargetsCalculator</label>
+        <name>RuleTargetsCalculator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Price rule running this condition. --></help>
+        <label>価格ルール</label>
+        <name>Rule__c</name>
+        <relationshipLabel>価格条件</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter a formula with operators, functions, and available fields on quote and target object. Not supported on legacy calculator. --></help>
+        <label>テスト対象数式</label>
+        <name>TestedFormula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Summary variable tested by this price condition. --></help>
+        <label>テスト対象変数</label>
+        <name>TestedVariable__c</name>
+        <relationshipLabel>価格条件 (テスト対象変数)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the value you want to match in the field you selected using the operator chosen. --></help>
+        <label>条件値</label>
+        <name>Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Price Condition Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Filter Information --></label>
+            <section>Filter Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>条件番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage>[条件種別] が [数式] の場合、[条件の数式] は空にできません。</errorMessage>
+        <name>Filter_formula_field_null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>いずれかの項目またはテスト対象変数を指定する必要があります。</errorMessage>
+        <name>Tested_field_or_variable</name>
+    </validationRules>
+</CustomObjectTranslation>

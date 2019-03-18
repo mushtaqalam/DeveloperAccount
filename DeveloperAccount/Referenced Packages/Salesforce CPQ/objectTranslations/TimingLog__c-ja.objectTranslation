@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>タイミングログ</value>
+    </caseValues>
+    <fields>
+        <label>要素</label>
+        <name>Element__c</name>
+    </fields>
+    <fields>
+        <label>完了</label>
+        <name>Finish__c</name>
+    </fields>
+    <fields>
+        <help><!-- Log entry --></help>
+        <label>ログ</label>
+        <name>Log__c</name>
+    </fields>
+    <fields>
+        <help><!-- Starting CPU time --></help>
+        <label>開始</label>
+        <name>Start__c</name>
+    </fields>
+    <fields>
+        <label>合計 CPU 時間</label>
+        <name>Total__c</name>
+    </fields>
+    <fields>
+        <label>URL</label>
+        <name>URL__c</name>
+    </fields>
+    <nameFieldLabel>名前</nameFieldLabel>
+</CustomObjectTranslation>

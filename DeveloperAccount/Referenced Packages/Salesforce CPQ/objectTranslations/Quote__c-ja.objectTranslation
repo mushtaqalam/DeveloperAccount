@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>見積</value>
+    </caseValues>
+    <fields>
+        <help><!-- The customer account for this quote. Defaults to the account for the opportunity when creating a quote. --></help>
+        <label>取引先</label>
+        <name>Account__c</name>
+        <relationshipLabel>見積</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the amount additionally discounted on this quote. --></help>
+        <label>追加割引額</label>
+        <name>AdditionalDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Average customer discount (in percent) for this quote. --></help>
+        <label>平均顧客割引 (%)</label>
+        <name>AverageCustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Average partner discount (in percent) for this quote. --></help>
+        <label>平均パートナー割引 (%)</label>
+        <name>AveragePartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- City of the Bill To address for this quote. --></help>
+        <label>請求先 市区郡</label>
+        <name>BillingCity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Country of the Bill To address for this quote. --></help>
+        <label>請求先 国</label>
+        <name>BillingCountry__c</name>
+    </fields>
+    <fields>
+        <help><!-- Defines the billing frequency. --></help>
+        <label>請求サイクル</label>
+        <name>BillingFrequency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name for the Bill To address. --></help>
+        <label>請求先名</label>
+        <name>BillingName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Postal Code of the Bill To address for this quote. --></help>
+        <label>請求先 郵便番号</label>
+        <name>BillingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- State/Province of the Bill To address for this quote. --></help>
+        <label>請求先 都道府県</label>
+        <name>BillingState__c</name>
+    </fields>
+    <fields>
+        <help><!-- Street portion of the billing address for this quote. --></help>
+        <label>請求先 町名・番地</label>
+        <name>BillingStreet__c</name>
+    </fields>
+    <fields>
+        <help><!-- &quot;By Subscription End Date&quot; creates a separate Contract for each unique Subscription End Date, containing only those Subscriptions. &quot;Single Contract&quot; creates one Contract containing all Subscriptions, regardless of their End Dates. --></help>
+        <label>契約方法</label>
+        <name>ContractingMethod__c</name>
+        <picklistValues>
+            <masterLabel>By Subscription End Date</masterLabel>
+            <translation><!-- By Subscription End Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Contract</masterLabel>
+            <translation><!-- Single Contract --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is a Roll-Up Summary field. --></help>
+        <label>顧客金額</label>
+        <name>CustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Additional discount extended to the customer on this quote. This value can be overridden at the individual line item level. Any line items that don&apos;t have additional discount explicitly specified will default to this value. --></help>
+        <label>追加割引 (%)</label>
+        <name>CustomerDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of days the quote has been opened. --></help>
+        <label>見積のオープン日数</label>
+        <name>DaysQuoteOpen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Template that should be used with this quote. Salesforce CPQ automatically selects the template specified here when you click &quot;Generate Document&quot; --></help>
+        <label>デフォルトのテンプレート</label>
+        <name>DefaultTemplate__c</name>
+        <relationshipLabel>見積</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Method used to deliver products on this quote. --></help>
+        <label>配信方法</label>
+        <name>DeliveryMethod__c</name>
+        <picklistValues>
+            <masterLabel>Download</masterLabel>
+            <translation><!-- Download --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship</masterLabel>
+            <translation><!-- Ship --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Distributor discount that applies to this quote unless overridden on line item level. --></help>
+        <label>流通業者割引</label>
+        <name>DistributorDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Distributor for this quote. Defaulted from partner on opportunity with role of &quot;Distributor&quot;. --></help>
+        <label>流通業者</label>
+        <name>Distributor__c</name>
+        <relationshipLabel>流通業者見積</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates the status of your Document: Pending, Sent, Failed. --></help>
+        <label>ドキュメントの状況</label>
+        <name>DocumentStatus__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If you have a specific email template to use for documents generated and emailed from this quote, enter the email template ID here. --></help>
+        <label>メールテンプレート ID</label>
+        <name>EmailTemplateId__c</name>
+    </fields>
+    <fields>
+        <help><!-- End date for subscriptions in this group. --></help>
+        <label>終了日</label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date after which the Quote is no longer valid --></help>
+        <label>終了日</label>
+        <name>ExpirationDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- For multi-segment Products, enter the end date in order to prorate first segment. --></help>
+        <label>最初のセグメント期間の終了日</label>
+        <name>FirstSegmentTermEndDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will generate a contracted price based on all adjusted quote line on quote if flagged. --></help>
+        <label>契約価格を生成</label>
+        <name>GenerateContractedPrice__c</name>
+        <picklistValues>
+            <masterLabel>Discount Schedule</masterLabel>
+            <translation><!-- Discount Schedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Generate</masterLabel>
+            <translation><!-- Do Not Generate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Introduction that can be printed on the generated PDF document. --></help>
+        <label>はじめに</label>
+        <name>Introduction__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal unique key used for identifying &quot;shopping cart&quot; quotes without relying on internal IDs --></help>
+        <label>キー</label>
+        <name>Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of line items in this quote. --></help>
+        <label>品目数</label>
+        <name>LineItemCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this option to use SolutionGroups(TM) or add your own groups on the Edit Lines page to categorize and subtotal quote line items. --></help>
+        <label>グループ品目</label>
+        <name>LineItemsGrouped__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to print individual line items on the generated PDF quote document for group quotes. --></help>
+        <label>品目を出力</label>
+        <name>LineItemsPrinted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total List Amount of each non-optional line item in this quote. --></help>
+        <label>リスト金額</label>
+        <name>ListAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Default markup rate applied to line items on this quote. You&apos;ll be able to override this value on group and line item level. --></help>
+        <label>マークアップ (%)</label>
+        <name>MarkupRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Master contract with which subscription products in this quote are to be co-terminated. --></help>
+        <label>主契約</label>
+        <name>MasterContract__c</name>
+        <relationshipLabel>期間調整対象見積</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Total Net Amount of each non-optional line item in this quote. --></help>
+        <label>正味金額</label>
+        <name>NetAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Notes printed on the generated PDF document. --></help>
+        <label>メモ</label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Opportunity associated with this Quote. --></help>
+        <label>商談</label>
+        <name>Opportunity2__c</name>
+        <relationshipLabel>見積</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If flagged while setting the Quote to &quot;Ordered&quot;, an Order will be created for each Quote Line Group with their associated Quote Lines. --></help>
+        <label>見積品目グループごとに注文</label>
+        <name>OrderByQuoteLineGroup__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Quote Line field used to determine order grouping. --></help>
+        <label>注文単位</label>
+        <name>OrderBy__c</name>
+        <picklistValues>
+            <masterLabel>ProductFamily__c</masterLabel>
+            <translation><!-- ProductFamily__c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QuantityBasedFormulaField__c</masterLabel>
+            <translation><!-- QuantityBasedFormulaField__c --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The unique identifier for the Amend: Re-Quote transaction, which is the original primary quote&apos;s ID. --></help>
+        <label>注文グループ ID</label>
+        <name>OrderGroupID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to automatically create an order from this quote, if it is a primary quote. --></help>
+        <label>注文</label>
+        <name>Ordered__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this Quote record represents an Amend: Re-Quote, use this field to link back to the original quote. --></help>
+        <label>元の見積</label>
+        <name>OriginalQuote__c</name>
+        <relationshipLabel>修正: 再見積</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Choose the paper size for this document. --></help>
+        <label>用紙サイズ</label>
+        <name>PaperSize__c</name>
+    </fields>
+    <fields>
+        <help><!-- Discount extended to the partner on this opportunity. --></help>
+        <label>パートナー割引</label>
+        <name>PartnerDiscount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary partner on this deal (if any). This field defaults to the partner marked as primary in the Partners related list on the opportunity. --></help>
+        <label>パートナー</label>
+        <name>Partner__c</name>
+        <relationshipLabel>パートナー見積</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Terms that govern payment of the items in this quote. --></help>
+        <label>お支払い条件</label>
+        <name>PaymentTerms__c</name>
+        <picklistValues>
+            <masterLabel>Due on receipt</masterLabel>
+            <translation><!-- Due on receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 15</masterLabel>
+            <translation><!-- Net 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation><!-- Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation><!-- Net 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation><!-- Net 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 90</masterLabel>
+            <translation><!-- Net 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Price Book associated with this Quote. --></help>
+        <label>価格表</label>
+        <name>PriceBook__c</name>
+        <relationshipLabel>見積</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- ID of the Price Book used by this quote. --></help>
+        <label>価格表 ID</label>
+        <name>PricebookId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Primary contact for the quote. This person&apos;s name will appear on generated quote document. --></help>
+        <label>主取引先責任者</label>
+        <name>PrimaryContact__c</name>
+        <relationshipLabel>見積</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Select this checkbox to designate this quote as the primary one on the opportunity and sync quote line items with opportunity line items. --></help>
+        <label>主</label>
+        <name>Primary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Language used for this Quote when mass generating Quote Documents --></help>
+        <label>見積の言語</label>
+        <name>QuoteLanguage__c</name>
+        <picklistValues>
+            <masterLabel>Chinese (Simplified)</masterLabel>
+            <translation><!-- Chinese (Simplified) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Traditional)</masterLabel>
+            <translation><!-- Chinese (Traditional) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish</masterLabel>
+            <translation><!-- Danish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch</masterLabel>
+            <translation><!-- Dutch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish</masterLabel>
+            <translation><!-- Finnish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation><!-- Japanese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian</masterLabel>
+            <translation><!-- Norwegian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Brazilian)</masterLabel>
+            <translation><!-- Portuguese (Brazilian) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation><!-- Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish (Mexican)</masterLabel>
+            <translation><!-- Spanish (Mexican) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish</masterLabel>
+            <translation><!-- Swedish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai</masterLabel>
+            <translation><!-- Thai --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Guided selling process ID to use with this quote, if any. --></help>
+        <label>見積プロセス ID</label>
+        <name>QuoteProcessId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Stores a quote template ID if one is specified to use when generating quote PDF documents. --></help>
+        <label>見積テンプレート ID</label>
+        <name>QuoteTemplateId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total amount of non-optional line times before additional discounts are applied. --></help>
+        <label>通常金額</label>
+        <name>RegularAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Specify the term of the renewal. By default, it matches the original contract term. --></help>
+        <label>更新期間</label>
+        <name>RenewalTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rate of renewal price increases. --></help>
+        <label>更新の上昇率 (%)</label>
+        <name>RenewalUpliftRate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sales rep responsible for this quote if different from the user who owns the quote record. --></help>
+        <label>営業担当</label>
+        <name>SalesRep__c</name>
+        <relationshipLabel><!-- Quotes --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- City on the Ship To address for this quote. --></help>
+        <label>納入先 市区郡</label>
+        <name>ShippingCity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Country on the Ship To address for this quote. --></help>
+        <label>納入先 国</label>
+        <name>ShippingCountry__c</name>
+    </fields>
+    <fields>
+        <help><!-- Name on the Ship To address for this quote. --></help>
+        <label>納入先名</label>
+        <name>ShippingName__c</name>
+    </fields>
+    <fields>
+        <help><!-- Postal Code on the Ship To address for this quote. --></help>
+        <label>納入先 郵便番号</label>
+        <name>ShippingPostalCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- State/Province on the Ship To address for this quote. --></help>
+        <label>納入先 都道府県</label>
+        <name>ShippingState__c</name>
+    </fields>
+    <fields>
+        <help><!-- Street on the Ship To address for this quote. --></help>
+        <label>納入先 町名・番地</label>
+        <name>ShippingStreet__c</name>
+    </fields>
+    <fields>
+        <help><!-- Source of cloned quote. If cloned, this references the original quote cloned. --></help>
+        <label>ソース</label>
+        <name>Source__c</name>
+        <relationshipLabel>見積 (ソース)</relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Start date for subscriptions in this quote. --></help>
+        <label>開始日</label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <help><!-- Status indicating where quote is in its lifecycle. --></help>
+        <label>状況</label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presented</masterLabel>
+            <translation><!-- Presented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Subscription term used to prorate eligible products by day or month.  This has been set by your administrator. --></help>
+        <label>サブスクリプション期間</label>
+        <name>SubscriptionTerm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter desired customer amount to automatically calculate additional discount on discountable line items. --></help>
+        <label>目標顧客金額</label>
+        <name>TargetCustomerAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total amount of customer discount. This includes any contracted, volume, compound rate and additional discounts. --></help>
+        <label>顧客割引総額</label>
+        <name>TotalCustomerDiscountAmount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates the type of quote. --></help>
+        <label>種別</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Amendment</masterLabel>
+            <translation><!-- Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Quote</masterLabel>
+            <translation><!-- Re-Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the quote has ever been opened to determine if it is a new quote. --></help>
+        <label>未オープン</label>
+        <name>Unopened__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the checkbox to display watermark in the Quote Document. --></help>
+        <label>透かしを表示</label>
+        <name>WatermarkShown__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label><!-- Additional Text --></label>
+            <section>Additional Text</section>
+        </sections>
+        <sections>
+            <label><!-- Address Information --></label>
+            <section>Address Information</section>
+        </sections>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Discount Information --></label>
+            <section>Discount Information</section>
+        </sections>
+        <sections>
+            <label><!-- Partner Information --></label>
+            <section>Partner Information</section>
+        </sections>
+        <sections>
+            <label><!-- Quote Options --></label>
+            <section>Quote Options</section>
+        </sections>
+        <sections>
+            <label><!-- Recalculating --></label>
+            <section>Recalculating</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>見積番号</nameFieldLabel>
+    <validationRules>
+        <errorMessage>終了日は開始日の後の日付に設定する必要があります。</errorMessage>
+        <name>End_Date_Before_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>最初のセグメント期間の終了日は、見積開始日と見積終了日の間にある必要があります。</errorMessage>
+        <name>Invalid_First_Segment_Term_End_Date</name>
+    </validationRules>
+    <webLinks>
+        <label>関連情報と共にコピー</label>
+        <name>CloneWithRelated</name>
+    </webLinks>
+    <webLinks>
+        <label>関連情報と共にコピー</label>
+        <name>CloneWithRelatedClassic</name>
+    </webLinks>
+    <webLinks>
+        <label>注文の作成</label>
+        <name>CreateOrderFromQuote</name>
+    </webLinks>
+    <webLinks>
+        <label>品目の編集</label>
+        <name>EditLines</name>
+    </webLinks>
+    <webLinks>
+        <label>ドキュメントを作成</label>
+        <name>GenerateDocument</name>
+    </webLinks>
+    <webLinks>
+        <label>品目をインポート</label>
+        <name>ImportLines</name>
+    </webLinks>
+    <webLinks>
+        <label>ドキュメントを含める</label>
+        <name>IncludeDocument</name>
+    </webLinks>
+    <webLinks>
+        <label>見積期間を変更</label>
+        <name>ModifyQuoteTerms</name>
+    </webLinks>
+    <webLinks>
+        <label>ドキュメントのプレビュー</label>
+        <name>PreviewDocument</name>
+    </webLinks>
+    <webLinks>
+        <label>価格を更新</label>
+        <name>RefreshMultiplePrices</name>
+    </webLinks>
+    <webLinks>
+        <label>価格を更新</label>
+        <name>RefreshPrices</name>
+    </webLinks>
+</CustomObjectTranslation>
